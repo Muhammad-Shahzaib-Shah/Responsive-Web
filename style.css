@@ -12,9 +12,12 @@ html {
 
 p,
 li,
-a {
+a,
+label {
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: grey;
     line-height: 1.5;
 }
 
@@ -36,7 +39,7 @@ li {
 .container {
     max-width: 122rem;
     margin: 0 auto;
-    padding: 4.9rem 0.6rem;
+    padding: 4.9rem 1rem;
 }
 
 .section .container {
@@ -45,6 +48,28 @@ li {
     align-items: center;
     padding: 1.8rem 0.6rem;
 
+
+}
+
+.custom-shape-divider-bottom-1752209700 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1752209700 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 8rem;
+}
+
+.custom-shape-divider-bottom-1752209700 .shape-fill {
+    fill: #FFFFFF;
 }
 
 .section .navbar ul {
@@ -81,28 +106,29 @@ li {
     display: grid;
     align-items: center;
     gap: 6.4rem;
-
-    & .hero-para {
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        font-size: 1.7rem;
-        font-weight: 700;
-        word-spacing: 0.2rem;
-        color: darkblue;
-    }
-
-    & .hero-heading {
-        font-size: 5.8rem;
-        font-family: "jost";
-        color: rgb(1, 1, 157);
-        font-weight: 900;
-    }
-
-    & .para {
-        color: white;
-        margin: 2rem 0 4rem 0;
-    }
 }
+
+.hero-para {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    word-spacing: 0.2rem;
+    color: darkblue;
+}
+
+.hero-heading {
+    font-size: 5.8rem;
+    font-family: "jost";
+    color: rgb(1, 1, 157);
+    font-weight: 900;
+}
+
+.para {
+    color: white;
+    margin: 2rem 0 4rem 0;
+}
+
 
 .gridtwo--cols {
     grid-template-columns: repeat(2, 1fr);
@@ -123,7 +149,9 @@ li {
 }
 
 main {
+    position: relative;
     background-image: linear-gradient(to top right,
+
             #3d86fa,
             #4484fb,
             #679eff,
@@ -180,15 +208,6 @@ main {
             #679eff,
             #b3d2ff,
             #ebf3fe);
-}
-
-.course-cart {
-    padding: 2.4rem;
-    margin: 1.7rem 0 1rem 0;
-    width: 10rem;
-    height: auto;
-    border-radius: 100%;
-    background-color: rgb(238, 238, 238);
 }
 
 .fourcols {
@@ -316,52 +335,63 @@ figure {
     height: 30rem;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px;
-    
+
 }
-.contact-content p{
+
+.contact-content p {
     color: gray;
     margin: 1.2rem 0 2.4rem 0;
 }
-.contact-content{
+
+.contact-content {
     padding-left: 3rem;
     padding-top: 5rem;
 
 }
-.contact-content h2{
+
+.contact-content h2 {
     font-size: 3.3rem;
 }
-.contact-contents{
+
+.contact-contents {
     position: relative;
     bottom: -10rem;
-    background:white;
+    background: white;
     z-index: 3;
 }
-.contact-image img{
-    width:90% ;
+
+.contact-image img {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* min-height: 25rem; */
     padding-top: 5rem;
 }
-.about{
-    padding-top: 7.4rem;
+
+.about {
+    padding-top: 2rem;
 }
-footer{
+
+footer {
     background: #040d12;
     padding-top: 12rem;
 }
-footer *{
+
+footer * {
     color: white;
 }
-.footer1 p{
+
+.footer1 p {
     margin: 1rem 0 3rem 0;
 }
-.social-icon{
+
+.social-icon {
     display: flex;
     gap: 2rem;
 }
-.social-icon a{
+
+.social-icon a {
     width: 4rem;
     aspect-ratio: 1;
     /* height: 9rem; */
@@ -373,41 +403,179 @@ footer *{
     justify-self: center;
     align-self: center;
 }
-footer .grid{
+
+footer .grid {
     text-align: right;
 }
-.footer1{
+
+.footer1 {
     text-align: left;
-}   
-.logo-brand a{
+}
+
+.logo-brand a {
     font-size: 2rem;
     font-weight: 700;
 }
-.footer-subheading{
+
+.footer-subheading {
     font-size: 1.9rem;
     font-weight: 500;
 }
-.grid1-img img{
+
+.grid1-img img {
     width: 100%;
     height: auto;
- 
+
 }
 
-.grid1{
+.grid1 {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px;
 
 }
-.cal p{
-    margin:0 0  12px 12px;
+
+.cal p {
+    margin: 0 0 12px 12px;
     padding: 0;
 }
-.content-para h3{
-    margin:0 0  12px 12px;
+
+.content-para h3 {
+    margin: 0 0 12px 12px;
     font-size: 1.8rem;
 }
-.contact-content  .fourcols{
+
+.contact-content .fourcols {
     margin-top: 7rem;
 }
-.fourcols .grid1:hover{
+
+.fourcols .grid1:hover {
     scale: 1.05;
+}
+
+/* Contact Page */
+.mb3 {
+    margin-bottom: 3.2rem;
+}
+
+label {
+    display: block;
+    text-transform: capitalize;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.4rem 2.4rem;
+
+}
+
+:focus-visible {
+    outline: 0.1rem solid #3d86fa;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    padding: 1.4rem 0;
+}
+
+.submit {
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.fa-brands {
+    padding: 1.4rem;
+    margin: 1.7rem auto;
+    width: 9rem;
+    height: auto;
+    border-radius: 100%;
+    background-color: rgb(238, 238, 238);
+    font-size: 5rem;
+    /* background-color: rgb(255, 255, 0); */
+    color: white;
+}
+
+.fa-js {
+    background: #FFFF00;
+}
+
+.fa-python {
+    background: #50C878;
+}
+
+
+
+/* Media Queries Responsive website */
+@media (width<=1100px) {
+    html {
+        font-size: 56%;
+    }
+    
+    .section .container{
+        /* display: flex; */
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+    }
+    .container{
+                padding-right: 2rem;
+        padding-left: 2rem;
+
+    }
+    .section-hero h1 {
+        font-size: 4.3rem;
+        /* color: #040d12; */
+    }
+    .image-hero img {
+        width: 90%;
+    }
+
+    .custom-shape-divider-bottom-1752209700 svg {
+        height: 5.4rem;
+    }
+}
+
+@media (width<=780px) {
+
+    .gridtwo--cols,
+    .grid-threecols,
+    .container-grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .section-hero {
+        order: 2;
+
+        &.hero-heading {
+            font-size: 2rem;
+        }
+    }
+
+    .image-hero {
+        order: 1;
+        width: 45%;
+        margin: auto;
+        height: auto;
+    }
+    
+    .section .container{
+        /* display: flex; */
+        padding-right: 2rem;
+        flex-direction: column;
+    }
+
+    .about-div{
+        /* justify-content: left; */
+        text-align: left;
+    
+    }
+    .container-grid {
+        gap: 0.3rem;
+    }
+}
+@media (width<=1100px){
+.courses .fourcols{
+        grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+    }
 }
